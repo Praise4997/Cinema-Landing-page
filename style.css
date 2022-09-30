@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 *{
+    font-family: 'Quicksand', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -47,7 +49,7 @@
 }
 .popcorn h2{
     font-size: 4em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
     transform: scaleY(2.5);
@@ -183,6 +185,7 @@ span{
     border: 1px solid #FEFCFF;
     color: #FEFCFF;
     padding: 1em 2em;
+    width: fit-content;
     margin-left: 10px;
     margin-bottom: 15px;
     font-size: 1em;
@@ -195,7 +198,7 @@ span{
 /* third section */
 #third-section img{
     position: absolute;
-    top: 185%;
+    top: 210%;
     height: 650px;
     width: 100%;
     border-top-left-radius: 8em;
@@ -242,7 +245,7 @@ span{
     }
     #second-section{
         top: 62em;
-        width: 80%;
+        width: 90%;
         left: 1em; 
         padding: 2.5em 2em;
     }
@@ -250,13 +253,28 @@ span{
         height: 400px;
         border-top-left-radius: 2.5em;
         border-top-right-radius: 2.5em;
-        top: 220%;
+        top: 230%;
     }
-    .row2{
-        display: none;
-    }
+
     .row-btn{
         display: flex;
         flex-direction: column;
+    }
+    .pop-image #real{
+        height: auto;
+    }
+
+    .row-btn button{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .row2{
+        display: none;
+    }
+
+    #second-section{
+        width: 80%;
     }
 }
